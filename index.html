@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
+<header class="header">
     <!--LOGO-->
     <div class="container">
         <a href="">
@@ -18,29 +18,29 @@
         </a>
         <!--NAVIGATION-->
         <nav>
-            <ul>
+            <ul class="navList">
                 <li>
-                    <a href="">О нас</a>
+                    <a href="#about">О нас</a>
                 </li>
                 <li>
-                    <a href="">Услуги и цены</a>
+                    <a href="#price">Услуги и цены</a>
                 </li>
                 <li>
-                    <a href="">Мастера</a>
+                    <a href="#masters">Мастера</a>
                 </li>
                 <li>
-                    <a href="">Контакты</a>
+                    <a href="#contact">Контакты</a>
                 </li>
-            </ul>
+            </ul> 
             <ul>
                 <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
-                <li><a href="">онлайн-запись</a></li>
+                <li><a href="" class="sing-link">онлайн-запись</a></li>
             </ul>
         </nav>
     </div>
 </header>
 <main>
-    <!--HERO-->
+    <!--Main content-->
   <section>
       <div class="container">
           <ul>
@@ -57,8 +57,10 @@
                 <li><button type="button">Вперед</button></li>
             </ul>
         </div>
-  </section>  
-  <section>
+  </section> 
+   <!--about  -->
+  <section id="about">
+      <div class="container">
     <ul>
           <li><img src="./image/img1.jpg" alt="img1" width="270"></li>
           <img src="./image/img2.jpg" alt="img2" width="270">        
@@ -70,9 +72,10 @@
     и жаждет перемен. И когда ты попадешь в руки нашего мастера, 
     то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
 <a href="#" class="sing-link">онлайн-запись</a>
+</div>
   </section>
-  <section>
-    <div class="container"></div>
+  <section id="price">
+    <div class="container">
     <p>Проведи время в компании лучших мастеров</p>
     <h2>Услуги и цены</h2>
     <!--table-->
@@ -113,7 +116,7 @@
         </tr>
     </table>
     <a href="#" class="sing-link">онлайн-запись</a>
-    <div>
+</div>
 </section>
   <section>
     <div class="container">
@@ -142,7 +145,7 @@
         </div>
     </div>
   </section>
-  <section>
+  <section id="masters">
     <div class="container">
       <p>для настоящих ценителей атмосферы</p>
       <h2>Наши мастера</h2>
@@ -261,7 +264,7 @@
         <button type="submit">отправить</button>
     </form>
     <!-- contact -->
-    <div>
+    <div id="contact">
         <h2>Контакты</h2>
         <address>
             <ul>
@@ -285,11 +288,13 @@
 </section>
 </main>
 <footer>
+    <div class="container">
     <p>&copy; Copyright 2020</p>
     <ul>
         <li><a href="">Youtube</a></li>
         <li><a href="">Instagram</a></li>
     </ul>
+</div>
 </footer>
 </body>
 </html>

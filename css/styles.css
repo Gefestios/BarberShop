@@ -1,16 +1,63 @@
-.social-links .link {
-    color: teal;
-  }
-  
-  .social-links .link:hover,
-  .social-links .link:focus {
-    color: orange;
-  }
-  
-  .social-links .link:active {
-    color: red;
-  }
-  
-  .social-links .link:visited {
-    color: green;
-  }
+:root{
+  --pretty-color:rgba(255, 108, 0, 1);
+  --white-color:rgba(255, 255, 255, 1);
+  --main-font: 'Open-Sans', sans-serif;
+  --accent-font: 'Raleway', sans-serif;
+
+}
+/* Универсальный селектор */
+*{
+box-sizing: border-box;
+margin: 0px;
+padding: 0px;
+}
+
+body{
+  font-family: var(--main-font);
+  font-style: normal;
+}
+
+/* Cелектор Тега */
+ul{
+  list-style: none;
+}
+
+
+a{
+  /* наследует цвет от родителя */
+  color: inherit;
+  text-decoration: none;
+}
+
+.sing-link{
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.361;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  border: solid var(--pretty-color);
+  border-radius: 25px;
+}
+.sing-link:hover{
+  background-color: var(--pretty-color);
+}
+
+/* Классовый селектор */
+.container{
+width: 1200px;
+margin-left: auto;
+margin-right: auto;
+/* margin: 0 auto; */
+}
+
+/* HEDER STYLE */
+.header{
+  background: black;
+  color: var(--white-color);
+}
+.navList a:hover,
+.navList a:focus {
+  color: var(--pretty-color);
+}
+/* HEDER STYLE */
